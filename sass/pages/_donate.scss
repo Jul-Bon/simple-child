@@ -1,0 +1,21 @@
+.donate_page {
+    .custom-page {
+        border-left: none;
+    }
+
+    h3 {
+        text-transform: none;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+.requisites {
+    padding: 30px 20px 50px;
+
+    @media screen and(min-width: 991px) {
+        padding: 30px 30px 70px;
+    }
+}

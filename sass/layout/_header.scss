@@ -1,0 +1,208 @@
+#masthead {
+    background: none;
+    border-bottom: none;
+    position: relative;
+    .top-bg {
+        height: 35px;
+        text-align: right;
+        .button-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+    .wrapper {
+        padding-bottom: 30px;
+        border-bottom: 3px solid $border-color;
+        @media screen and(min-width: 767px) {
+            box-sizing: border-box;
+        }
+    }
+    #header-content {
+        margin: 10px 0 0;
+    }
+    .bottom-bg {
+        display: none;
+    }
+}
+
+#header-content {
+    margin: 10px 0 0;
+    text-align: center;
+    .site-branding {
+        .site-logo {
+            max-width: 250px;
+            margin: 0 auto;
+        }
+        .site-branding-text {
+            .site-title a {
+                font: italic 800 20px sans-serif;
+                line-height: 26px;
+                color: #263a68;
+            }
+            .site-description {
+                font: italic 18px sans-serif;
+                color: #263a68;
+            }
+        }
+    }
+}
+
+/**For header content with H1
+#header-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and(min-width: 770px) {
+        display: block;
+    }
+
+    /*
+    .widget-area {
+        order: 2;
+    }
+    .hot-line {
+        order: 3;
+    }
+
+    .headline {
+        order: 1;
+        text-align: center;
+        @media screen and(min-width: 767px) {
+            float: left;
+        }
+        @media screen and(min-width: 770px) {
+            max-width: 200px;
+            text-align: left;
+        }
+        @media screen and(min-width: 991px) {
+            max-width: 300px;
+        }
+
+        .main_text {
+            margin: 0;
+            padding: 0;
+            font: italic 800 24px sans-serif;
+            @media screen and(min-width: 770px) {
+                margin-top: 55px;
+            }
+            a {
+                color: #263a68;
+            }
+        }
+
+        .bottom_part {
+            font: italic 18px sans-serif;
+            padding-top: 10px;
+        }
+    }
+}
+*/
+
+.custom-logo-link .custom-logo {
+    max-width: 100px;
+    @media screen and(min-width: 767px) {
+        max-width: 145px;
+    }
+}
+
+@media screen and(min-width: 767px) {
+    #header-content {
+        text-align: inherit;
+        .site-branding {
+            .site-logo {
+                max-width: 145px;
+                float: left;
+            }
+        }
+        .site-branding-text {
+            padding-top: 25px;
+            width: 200px;
+        }
+    }
+}
+
+
+.hot-line {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    @media screen and(min-width: 450px) {
+        font-size: 18px;
+    }
+
+    @media screen and(min-width: 767px) {
+        float: right;
+    }
+    @media screen and(min-width: 991px) {
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .phone-title {
+        display: block;
+        text-align: center;
+        @media screen and(min-width: 320px) {
+            display: inline-block;
+        }
+    }
+}
+
+#sidebar-top {
+    float: right;
+    .widget_simplecatch_social_widget {
+        display: none;
+    }
+    .widget_search {
+        margin-top: 40px;
+        @media screen and(min-width: 767px) {
+            margin-top: 29px;
+        }
+        @media screen and(min-width: 991px) {
+            margin-top: 29px;
+            margin-bottom: 17px;
+        }
+        .searchform {
+            display: flex;
+            justify-content: center;
+            @media screen and(min-width: 1119px) {
+                width: 368px;
+            }
+            .search-box {
+                box-sizing: border-box;
+                border: 1px solid #e0e0e0;
+                @media screen and(min-width: 1119px) {
+                    width: 80%;
+                }
+            }
+
+            input#s {
+                height: 33px;
+                @media screen and(min-width: 480px) {
+                    height: auto;
+                }
+            }
+        }
+        button {
+            background-color: $accent-color;
+            position: relative;
+            width: 65px;
+            text-indent: -9999px;
+            &:hover {
+                background-color: $hover-button-color;
+            }
+            &:before {
+                display: block;
+                content: '\f002';
+                font-family: FontAwesome;
+                font-size: 24px;
+                color: #ffffff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-indent: 0;
+            }
+        }
+    }
+}

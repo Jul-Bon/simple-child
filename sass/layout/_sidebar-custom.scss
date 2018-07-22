@@ -1,0 +1,28 @@
+#menu-about-us, #menu-questions-and-answers, #menu-activity {
+    display: none;
+    @media all and (min-width: 991px) {
+        display: block;
+        list-style: none;
+        text-align: left;
+        .sidebar-link {
+            padding-bottom: 5px;
+            &:hover {
+                background: none;
+            }
+            a {
+                font: 600 18px "helvetica neue", "open-sans", sans-serif;
+                color: $middle-text-color;
+                background: none;
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+#menu-about-us .sidebar-link.active > a,
+#menu-questions-and-answers .sidebar-link.active > a,
+#menu-activity .sidebar-link.active > a {
+    color: $accent-color;
+}

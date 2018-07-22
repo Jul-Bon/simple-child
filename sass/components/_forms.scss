@@ -1,0 +1,203 @@
+.wpcf7-form-control-wrap {
+    position: inherit;
+}
+
+/*Footer subscription form*/
+.form {
+    display: inline-block;
+    .wpcf7-form {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        @media screen and(min-width: 550px) {
+            flex-direction: row;
+            align-items: center;
+        }
+        p {
+            display: inline-block;
+            margin: 0;
+            max-width: 270px;
+        }
+        input {
+            display: inline-block;
+        }
+        input[type="email"] {
+            padding: 3px 10px;
+            width: 90%;
+            @media screen and(min-width: 550px) {
+                width: 85%;
+            }
+        }
+        .wpcf7-submit {
+            margin-top: 10px;
+            width: 100%;
+            @media screen and(min-width: 550px) {
+                width: auto;
+            }
+            @media screen and(min-width: 540px) {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.subscribe {
+    div.wpcf7-validation-errors,
+    div.wpcf7-acceptance-missing,
+    div.wpcf7-mail-sent-ok {
+        font-size: 14px;
+        margin: 0;
+        position: absolute;
+        top: 10px;
+        background-color: $main-light-color;
+        @media screen and(min-width: 320px) {
+            top: 40px;
+        }
+
+        @media screen and(min-width: 991px) {
+            top: 0;
+        }
+
+        @media screen and(min-width: 1119px) {
+            top: -10px;
+        }
+    }
+
+    span.wpcf7-not-valid-tip {
+        display: none;
+    }
+}
+
+/*Form on page Kontakty*/
+
+.contuct-form {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 60px;
+    margin-bottom: 40px;
+    @media screen and(min-width: 767px) {
+        width: 70%;
+        max-width: 450px;
+    }
+    @media screen and(min-width: 1119px) {
+        width: 40%;
+        margin-bottom: 80px;
+
+    }
+
+    input[type="email"],
+    input[type="text"] {
+        @media screen and(min-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    textarea {
+        resize: none;
+        @media screen and(min-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    .wpcf7-submit {
+        width: 130px;
+        margin-top: 90px;
+        @media screen and(min-width: 480px) {
+            margin-top: 20px;
+
+        }
+        @media screen and(min-width: 991px) {
+
+        }
+
+        @media screen and(min-width: 991px) {
+            margin-left: 340px;
+            margin-top: 15px;
+        }
+        @media screen and(min-width: 1119px) {
+            margin-left: 324px;
+        }
+    }
+
+    div.wpcf7-validation-errors,
+    div.wpcf7-acceptance-missing,
+    div.wpcf7-mail-sent-ok {
+        font-size: 14px;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        background-color: $main-light-color;
+    }
+
+    div.wpcf7-mail-sent-ok {
+        bottom: 40px;
+    }
+}
+
+/// form to page zadaty pitannia
+
+.wrap-form {
+    //padding-bottom: 28px;
+    padding-bottom: 150px;
+    border-bottom: 3px solid #ededed;
+    @media screen and(min-width: 481px) {
+        padding-bottom: 80px;
+    }
+}
+
+.form-questions {
+    box-sizing: border-box;
+    width: 290px;
+    margin: 0 auto;
+    .select select {
+        width: 290px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    input[type="text"], textarea {
+        width: 270px;
+        margin-bottom: 20px;
+        resize: none;
+    }
+    input[type="submit"] {
+        float: right;
+        margin-top: 100px;
+        @media screen and(min-width: 481px) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.form-questions div.wpcf7-response-output {
+    margin: 0;
+    padding: 0;
+    @media screen and(min-width: 481px) {
+        margin-top: 60px;
+    }
+}
+
+//.form-questions .wpcf7-form-control-wrap {
+//    margin-top: 128px;
+//    @media screen and(min-width: 481px) {
+//        margin-top: 0;
+//    }
+//}
+
+@media screen and(min-width: 767px) {
+    .form-questions {
+        width: 450px;
+        .select select {
+            width: 450px;
+        }
+        input[type="text"], textarea {
+            width: 430px;
+        }
+    }
+}
+
+@media screen and(min-width: 991px) {
+    .form-questions {
+        margin: 0 30px;
+    }
+}

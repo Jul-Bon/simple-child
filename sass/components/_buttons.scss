@@ -1,0 +1,135 @@
+/*Header buttons panel*/
+.header-button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 4px 20px;
+    height: 39px;
+    color: $main-light-color;
+    @media screen and(min-width: 991px) {
+        padding: 4px 15px;
+    }
+    &:hover,
+    &:focus {
+        color: $main-light-color;
+    }
+    i {
+        font-size: 24px;
+    }
+    span {
+        vertical-align: text-bottom;
+        margin-left: 7px;
+    }
+}
+
+.donate {
+    position: absolute;
+    right: 122px;
+    background-color: #87bd3f;
+    border-bottom: solid 4px #79a839;
+    @media screen and(min-width: 991px) {
+        right: 360px;
+        width: 190px;
+        text-align: center;
+    }
+    &:hover {
+        background-color: #95c751;
+    }
+    &:focus {
+        background-color: #95c751;
+    }
+    span {
+        display: none;
+        @media screen and(min-width: 991px) {
+            display: inline-block;
+        }
+    }
+}
+
+.help {
+    position: absolute;
+    right: 61px;
+    background-color: #75CDCE;
+    border-bottom: solid 4px #66bec2;
+    @media screen and(min-width: 991px) {
+        top: 0;
+        right: 200px;
+        width: 160px;
+        text-align: center;
+    }
+    &:hover {
+        background-color: #7ddcdd;
+    }
+    &:focus {
+        background-color: #7ddcdd;
+    }
+    span {
+        display: none;
+        @media screen and(min-width: 991px) {
+            display: inline-block;
+        }
+    }
+}
+
+.exit {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ff3333;
+    border-bottom: solid 4px #dd3030;
+    z-index: 9999;
+    @media screen and(min-width: 991px) {
+        width: 200px;
+        text-align: center;
+    }
+    &:hover {
+        background-color: #ff4646;
+    }
+    &:focus {
+        background-color: #ff4646;
+    }
+    span {
+        display: none;
+        @media screen and(min-width: 991px) {
+            display: inline-block;
+        }
+    }
+}
+
+/*Subscribe button in footer*/
+.form, .contuct-form, .form-questions {
+    .wpcf7-submit {
+        background: $accent-color;
+        color: $main-light-color;
+        text-shadow: none;
+        border: none;
+        box-shadow: none;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 10px 20px;
+        height: 38px;
+        &:hover {
+            background: $hover-button-color;
+        }
+        &:focus {
+            background: $focus-button-color;
+        }
+    }
+}
+
+///button for ajax
+
+.load-my-posts {
+    width: 116px;
+    padding: 10px 20px;
+    background: #79a839;
+    text-align: center;
+    font: 600 14px Arial, sans-serif;;
+    color: $main-light-color;
+    &:hover {
+        background: #874F9B;
+    }
+}
+
+
+
+

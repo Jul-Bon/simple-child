@@ -1,0 +1,59 @@
+.zaxist-prav-kontent {
+    padding-bottom: 0;
+    text-align: center;
+    img {
+        padding-bottom: 30px;
+    }
+    p {
+        text-align: justify;
+    }
+}
+
+.zaxist-ditej-list {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+.zaxist-ditej-content {
+    padding-bottom: 30px;
+    .zahist-post-img {
+        text-align: center;
+        img {
+            padding-bottom: 30px;
+        }
+    }
+    h3 {
+        text-align: center;
+        color: #0899bf;
+    }
+    .zaxist-post-descr {
+        text-align: justify;
+        a {
+            color: #0899bf;
+            text-decoration: underline;
+            &:hover {
+                color: #874F9B;
+            }
+        }
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.zaxist-ditej-list .zaxist-ditej-content h3{
+    padding-bottom: 15px;
+}
+@media all and (min-width: 991px) {
+    .zaxist-prav-kontent {
+        margin-bottom: 10px;
+        border-bottom: 3px solid #ededed;
+    }
+    .zaxist-ditej-list {
+        .zahist-post-img, h3 {
+            text-align: left;
+        }
+    }
+}

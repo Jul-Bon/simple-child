@@ -1,0 +1,34 @@
+
+#masthead {
+    .featured-img {
+        border: none;
+        background-color: $slider-background-color;
+        @media screen and(min-width: 991px) {
+            background-color: transparent;
+        }
+    }
+    @media screen and(min-width: 991px) {
+        .featured-text {
+            text-align: justify;
+        }
+    }
+    #main-slider {
+        background-color: $slider-background-color;
+        @media screen and(min-width: 991px) {
+            background-color: transparent;
+        }
+    }
+}
+
+#controllers {
+    padding: 10px 0 20px;
+}
+
+.featured-img a img,
+.featured-img span img {
+    @media screen and(min-width: 991px) {
+        display: block;
+        width: 1140px;
+        height: auto;
+    }
+}

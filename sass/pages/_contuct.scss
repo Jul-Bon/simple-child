@@ -1,0 +1,39 @@
+.contuct_page {
+    padding: 30px 15px;
+    @media screen and(min-width: 320px) {
+        padding: 30px;
+    }
+    @media screen and(min-width: 767px) {
+        padding: 30px 30px 40px;
+    }
+    @media screen and(min-width: 991px) {
+        padding: 30px 30px 50px;
+    }
+
+    h3 {
+        padding-bottom: 20px;
+    }
+    .list-contacts {
+        margin-bottom: 50px;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        &:nth-of-type(3) {
+            padding-bottom: 0;
+        }
+
+        i.fa {
+            width: 28px;
+            font-size: 28px;
+        }
+    }
+
+    .mobile {
+        padding-left: 40px;
+    }
+}
+
+.field {
+    margin-bottom: 0;
+}

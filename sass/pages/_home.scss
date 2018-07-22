@@ -1,0 +1,109 @@
+//main-content
+.main-home-content {
+    padding-top: 30px;
+    padding-left: 15px;
+}
+.welcome-block {
+    width: 100%;
+    background-color: #73d1ff;
+    text-align: center;
+    color: $main-light-color;
+    .welcome-block-name {
+        width: 100%;
+        padding: 15px 0;
+        background-color: #07abfb;
+        h2 {
+            //font: 18px "helvetica neue", "open-sans", arial, sans-serif;
+            font: 18px sans-serif;
+            color: $main-light-color;
+        }
+        p{
+            //font: 12px "helvetica neue", "open-sans", arial, sans-serif;
+            font: 18px sans-serif;
+        }
+        @media all and (min-width: 767px) {
+            float: left;
+            width: 30%;
+            height: 130px;
+            h2 {
+                padding-top: 30px;
+            }
+        }
+    }
+    .welcome-block-description {
+        width: 100%;
+        padding: 15px 10px;
+        box-sizing: border-box;
+        p {
+            padding: 10px auto;
+            font: italic 15px sans-serif;
+        }
+        @media all and (min-width: 767px) {
+            float: right;
+            width: 70%;
+            p {
+                padding: 20px 0 0;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.title-blog-section {
+    padding-top: 45px;
+    text-align: center;
+    font: 23px "helvetica neue", "open-sans", arial, sans-serif;
+    color: #263a68 !important;
+    @media all and (min-width: 1119px) {
+        text-align: left;
+    }
+}
+
+.post-list {
+    margin: 10px auto 30px;
+    padding: 0;
+    list-style: none;
+    @media all and (min-width: 1119px){
+        display: flex;
+        justify-content: space-between;
+    }
+    .content-front-list {
+        padding-bottom: 10px;
+        padding-top: 30px;
+        border-bottom: 1px solid #DDDDDD;
+        @media all and (min-width: 1119px) {
+            box-sizing: border-box;
+            width: 30%;
+            border-bottom: none;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.title-home-post {
+    text-align: center;
+    color: #474241;
+}
+
+.excerpt {
+    text-align: justify;
+    color: #737373;
+}
+img.wp-post-image {
+    max-width: 100%;
+}
+.post-img img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.front-sidebar {
+    @media all and (min-width: 1119px) {
+        padding-top: 30px;
+    }
+}

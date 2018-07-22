@@ -1,0 +1,69 @@
+.tabs {
+    list-style: none;
+    margin: 25px 0 0 0;
+    position: relative;
+}
+
+.tab {
+    float: left;
+    width: 100%;
+    text-align: justify;
+    span.region {
+        display: none;
+        @media screen and(min-width: 767px) {
+            display: block;
+        }
+    }
+    .region_link {
+        color: $middle-text-color;
+        padding: 10px 30px 10px 10px;
+        box-sizing: border-box;
+        width: 30%;
+        float: right;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 1s;
+        font-size: 16px;
+        font-weight: 600;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $accent-color;
+        }
+    }
+}
+
+.selected {
+    .region_link {
+        color: $accent-color;
+        &:hover,
+        &:active {
+            color: $accent-color;
+        }
+    }
+}
+
+.tab-content {
+    display: block;
+    padding: 0 25px 25px;
+    box-sizing: border-box;
+    width: 100%;
+
+    @media screen and(min-width: 767px) {
+        float: left;
+        padding: 0 50px 25px 30px;
+        width: 70%;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        display: none;
+    }
+}
+
+.list-contacts {
+    i.fa {
+        width: 20px;
+    }
+}

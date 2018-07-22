@@ -1,0 +1,29 @@
+/*Single new and blog page*/
+.single_page {
+    padding: 0 20px;
+    box-sizing: border-box;
+    @media screen and(min-width: 767px) {
+        padding: 0;
+    }
+
+    ul {
+        padding-left: 30px;
+    }
+    .comments {
+        margin-top: 50px;
+    }
+}
+
+.single_img {
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+        @media screen and(min-width: 991px) {
+            width: 45%;
+            height: auto;
+            margin: 0 30px 20px 0;
+            float: left;
+        }
+    }
+}
+
